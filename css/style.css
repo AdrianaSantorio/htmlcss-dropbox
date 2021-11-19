@@ -42,7 +42,7 @@ body {
     float: right;
 }
 
-/* colonne */
+/* columns */
 
 .col-20 {
     width:20%;
@@ -64,10 +64,29 @@ body {
     width: 60%;
 }
 
+/* buttons */
+
+.btn-small {
+
+}
+
+.btn-big {
+
+}
+
+.btn-blue {
+
+}
+
 /* HEADER */
 
 header {
     background-color: blue;
     line-height: 80px;
+    height: 80px;
 }
 
+header a {
+    text-decoration: none;
+    color: black;
+}
