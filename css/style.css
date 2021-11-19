@@ -111,11 +111,16 @@ a {
     background-color: #3381ff;
 }
 
+.btn-white {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
 /* HEADER */
 
 header {
-    background-color: lightblue;
-    /* TO DO -change background-color*/
+    background-color: white;
     line-height: 80px;
     height: 80px;
     color: black;
@@ -144,4 +149,26 @@ header a,img {
 
 .jumbotron {
     background-color: #B4D0E7;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.jumbotron h1 {
+    padding: 50px 0 40px;
+    font-size: 66px;
+    font-weight: 800;
+    /* TO DO: aggiustare font width e size? */
+}
+
+.jumbotron-text {
+    line-height: 22px;
+    padding-right: 9px;
+}
+
+.jumbotron-text p {
+    padding-bottom: 30px;
+}
+
+.jumbotron-text a+div {
+    margin: 20px 0;
 }
