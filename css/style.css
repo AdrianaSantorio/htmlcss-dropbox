@@ -33,16 +33,20 @@ body {
     clear: both;
 }
 
-
-.col {
-    float: left;
+.text-align-right {
+    text-align: right;
 }
+
 
 .float-right {
     float: right;
 }
 
 /* columns */
+
+.col {
+    float: left;
+}
 
 .col-20 {
     width:20%;
@@ -66,8 +70,13 @@ body {
 
 /* buttons */
 
-.btn-small {
+.btn {
 
+}
+
+.btn-small {
+    font-size: 16px;
+    padding: 5px 20px;
 }
 
 .btn-big {
@@ -75,18 +84,33 @@ body {
 }
 
 .btn-blue {
+    background-color: #0061FF;
+    color: white;
+    transition: background-color 0.5s;
+}
 
+.btn-blue:hover {
+    background-color: #3381ff;
 }
 
 /* HEADER */
 
 header {
-    background-color: blue;
+    background-color: lightblue;
+    /* TO DO -change background-color*/
     line-height: 80px;
     height: 80px;
+}
+
+header *:not(div) {
+    vertical-align: middle;
+    margin: 0 15px;
 }
 
 header a {
     text-decoration: none;
     color: black;
+    font-size: 16px;
+    font-weight: 500;
 }
+
