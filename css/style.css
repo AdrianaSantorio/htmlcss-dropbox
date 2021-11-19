@@ -15,7 +15,17 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Utilities */
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
 
 .container-big{
     width: 90%;
@@ -25,12 +35,6 @@ body {
 .container-medium{
     width: 80%;
     margin: auto;
-}
-
-.clearfix::after {
-    display: table;
-    content: '';
-    clear: both;
 }
 
 .text-align-right {
@@ -100,17 +104,25 @@ header {
     /* TO DO -change background-color*/
     line-height: 80px;
     height: 80px;
-}
-
-header *:not(div) {
-    vertical-align: middle;
-    margin: 0 15px;
-}
-
-header a {
-    text-decoration: none;
     color: black;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+header nav,ul,li {
+    display: inline;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header a,img {
+    vertical-align: middle;
+    margin: 0 15px;
+    color: black;
 }
 
