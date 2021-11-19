@@ -28,7 +28,7 @@ a {
 }
 
 .container-big{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -59,18 +59,32 @@ a {
 .col-25 {
     width: 25%;
 }
+
+.col-30 {
+    width: 30%;
+}
+
 .col-33 {
     width: calc(100% / 3);
 }
+
 .col-40 {
     width: 40%;
 }
+
 .col-50 {
     width: 50%;
 }
+
 .col-60 {
     width: 60%;
 }
+
+.col-70 {
+    width: 70%;
+}
+
+
 
 /* buttons */
 
@@ -126,3 +140,8 @@ header a,img {
     color: black;
 }
 
+/* JUMBOTRON */
+
+.jumbotron {
+    background-color: #B4D0E7;
+}
