@@ -128,6 +128,17 @@ a {
     color: black;
 }
 
+/* icons */
+
+.fa-li {
+    vertical-align: middle;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+}
+
 /* HEADER */
 
 header {
@@ -218,6 +229,13 @@ header a,img {
         padding: 10px 30px;
     }
 
+    .plans .box-cap {
+        padding: 10px 30px;
+        border-top:1px solid #E2E2E4;
+        border-left: 1px solid #E2E2E4 ;
+        border-right:1px solid #E2E2E4 ;
+    }
+
     .plans h3 {
         font-size: 28px;
         padding: 30px 0 16px;
@@ -241,6 +259,7 @@ header a,img {
     }
 
     hr {
-        width: 50%;
+        width: 20%;
         margin: 30px 0 40px;
     }
+
