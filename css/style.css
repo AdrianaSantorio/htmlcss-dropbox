@@ -127,9 +127,10 @@ header {
     color: black;
     font-size: 16px;
     font-weight: 600;
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
+    width:100%;
 }
 
 header nav,ul,li {
@@ -155,8 +156,7 @@ header a,img {
 }
 
 .jumbotron h1 {
-    padding: 70px 0 40px;
-    /* TO DO +80 px padding-top quando riusciro a mettere l' header in fixed */
+    padding: 150px 0 40px;
     font-size: 72px;
     font-weight: 700;
     /* TO DO: aggiustare font width e size? */
@@ -190,4 +190,4 @@ header a,img {
     top: 0;
     left: 0;
 }
-
+/* to do? ridimensionare immagine */
