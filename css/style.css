@@ -14,6 +14,7 @@ img {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    font-weight: 600;
 }
 
 a {
@@ -82,8 +83,16 @@ a {
     width: 40%;
 }
 
+.col-45 {
+    width: 45%;
+}
+
 .col-50 {
     width: 50%;
+}
+
+.col-55 {
+    width: 55%;
 }
 
 .col-60 {
@@ -172,7 +181,7 @@ header nav ul {
 
 
 
-header a,img {
+header a, header img {
     vertical-align: middle;
     margin: 0 15px;
     color: black;
@@ -182,8 +191,6 @@ header a,img {
 
 .jumbotron {
     background-color: #B4D0E7;
-    font-size: 14px;
-    font-weight: 600;
 }
 
 .jumbotron h1 {
@@ -242,7 +249,7 @@ header a,img {
         border-top:1px solid #E2E2E4;
         border-left: 1px solid #E2E2E4 ;
         border-right:1px solid #E2E2E4 ;
-        width: 100%;;
+        width: 100;
     }
 
     .plans .row .box {
@@ -282,4 +289,16 @@ header a,img {
 
     .row {
         padding-bottom: 50px;
+    }
+
+    /* PARTNERS */
+
+    .partners-text {
+        padding: 50px 0 0 60px;
+    }
+
+    .partners-text h2 {
+        font-size: 22px;
+        font-weight: 800;
+        margin:20px 0;
     }
