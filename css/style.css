@@ -89,16 +89,17 @@ a {
 /* buttons */
 
 .btn {
-
+    font-weight: normal;
 }
 
 .btn-small {
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px 20px;
 }
 
 .btn-big {
-
+   font-size: 14px;
+   padding: 8px 28px;
 }
 
 .btn-blue {
@@ -154,7 +155,8 @@ header a,img {
 }
 
 .jumbotron h1 {
-    padding: 50px 0 40px;
+    padding: 70px 0 40px;
+    /* TO DO +80 px padding-top quando riusciro a mettere l' header in fixed */
     font-size: 66px;
     font-weight: 800;
     /* TO DO: aggiustare font width e size? */
@@ -170,5 +172,9 @@ header a,img {
 }
 
 .jumbotron-text a+div {
-    margin: 20px 0;
+    margin: 10px 0 30px;
+}
+
+.jumbotron-text i {
+    font-size: 42px;
 }
