@@ -13,6 +13,7 @@ img {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 a {
@@ -33,12 +34,16 @@ a {
 }
 
 .container-medium{
-    width: 80%;
+    width: 65%;
     margin: auto;
 }
 
 .text-align-right {
     text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
 }
 
 
@@ -47,6 +52,10 @@ a {
 }
 
 /* columns */
+
+.row {
+    margin:0 -30px;
+}
 
 .col {
     float: left;
@@ -66,6 +75,7 @@ a {
 
 .col-33 {
     width: calc(100% / 3);
+    padding: 0 30px;
 }
 
 .col-40 {
@@ -131,15 +141,18 @@ header {
     top: 0;
     left: 0;
     width:100%;
+    z-index: 1;
 }
 
-header nav,ul,li {
+nav , nav ul, nav ul li {
     display: inline;
 }
 
 header nav ul {
     list-style-type: none;
 }
+
+
 
 header a,img {
     vertical-align: middle;
@@ -157,7 +170,7 @@ header a,img {
 
 .jumbotron h1 {
     padding: 150px 0 40px;
-    font-size: 72px;
+    font-size: 70px;
     font-weight: 700;
     /* TO DO: aggiustare font width e size? */
 }
@@ -165,7 +178,7 @@ header a,img {
 .jumbotron-text {
     line-height: 22px;
     padding-right: 9px;
-    height: 400px;
+    height: 405px;
 }
 
 .jumbotron-text p {
@@ -183,11 +196,51 @@ header a,img {
 .jumbotron-image {
     position: relative;
 }
-/* forse meglio come utilities? */
+    /* forse meglio come utilities? */
 
 .jumbotron-image figure {
     position: absolute;
     top: 0;
     left: 0;
 }
-/* to do? ridimensionare immagine */
+    /* to do? ridimensionare immagine */
+
+
+    /* PLANS */
+
+    .plans h2 {
+        font-size: 42px;
+        padding: 150px 0 50px;
+    }
+    
+    .plans .box {
+        border: 1px solid #E2E2E4;
+        padding: 10px 30px;
+    }
+
+    .plans h3 {
+        font-size: 28px;
+        padding: 30px 0 16px;
+    }
+    .plans ul {
+        list-style-type: none;
+    }
+    .plans-specifics li,.plans-features li {
+        padding: 15px 0; 
+    }
+
+    .plans br+span {
+        color: #6E7D8A;
+    }
+
+    .box .btn {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 40px 0 30px;
+    }
+
+    hr {
+        width: 50%;
+        margin: 30px 0 40px;
+    }
