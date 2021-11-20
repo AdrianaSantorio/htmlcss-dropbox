@@ -157,8 +157,8 @@ header a,img {
 .jumbotron h1 {
     padding: 70px 0 40px;
     /* TO DO +80 px padding-top quando riusciro a mettere l' header in fixed */
-    font-size: 66px;
-    font-weight: 800;
+    font-size: 72px;
+    font-weight: 700;
     /* TO DO: aggiustare font width e size? */
 }
 
