@@ -465,3 +465,10 @@ header a, header img {
         top: 75px;
         right: 40px ;
     }
+
+    /* FOOTER */
+
+    footer {
+        background-color: black;
+        color: white;
+    }
