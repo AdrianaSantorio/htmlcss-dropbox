@@ -17,10 +17,17 @@ body {
     font-weight: 600;
 }
 
-a {
+ul a {
     text-decoration: none;
 }
 
+section a {
+    color: #2779FF;
+}
+
+section h2 {
+    font-size: 3em;
+}
 /* Utilities */
 
 .clearfix::after {
@@ -124,6 +131,7 @@ a {
 
 .btn {
     font-weight: normal;
+    text-decoration: none;
 }
 
 .btn-small {
@@ -242,7 +250,6 @@ header a, header img {
     /* PLANS */
 
     .plans h2 {
-        font-size: 42px;
         padding: 150px 0 50px;
     }
     
@@ -310,7 +317,6 @@ header a, header img {
     /* FEATURES*/
 
     .features h2 {
-        font-size: 42px;
         padding-bottom: 40px;
     }
     
@@ -336,19 +342,13 @@ header a, header img {
         padding: 30px;
     }
 
-    .clients-text h2 {
-        font-size: 3em;
-    }
-
     .clients-text address {
 
     }
 
     /* clients logo */
 
-    .clients-logo-container {
-        position: relative;
-    }
+    
 
 
     .clients-logo {
@@ -361,48 +361,65 @@ header a, header img {
     }
 
     .square-15 {
-        height:230px;
+        height:15vw;
     }
    
 
-    /* backgrounds */
+    /* clients logo backgrounds*/
+
+
+    .clients-logo-container {
+        position: relative;
+    }
+
+    .clients-logo-container:hover::after {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 10px solid rgba(255, 255, 255, 0.4);
+    }
+    
+    /*  backgrounds */
 
     .clients-logo-container.designit {
         background-color: #A2D39B;
-        border: 5px solid #A2D39B;
     }
     
     .clients-logo-container.arizona-state-university {
         background-color: #61082B;
-        border: 5px solid #61082B;
     }
     
     .clients-logo-container.university-of-florida {
         background-color: #0093CE;
-        border: 5px solid #0093CE;
     }
     
     .clients-logo-container.topps {
         background-color: #FF1C1C;
-        border: 5px solid #FF1C1C ;
     }
     
     .clients-logo-container.world-bycicle-relief {
         background-color: #D5001F;
-        border: 5px solid #D5001F ;
     }
     
     .clients-logo-container.hearst-corporation {
         background-color: #B4D0E7 ;
-        border: 5px solid #B4D0E7 ;
     }
     
     .clients-logo-container.lonely-planet {
         background-color: #0D2481;
-        border: 5px solid #0D2481 ;
     }
     
     .clients-logo-container.clear-channel-outdoor {
         background-color: #FFD830;
-        border: 5px solid #FFD830 ;
     }
+
+    /* .clients-logo-container:hover {
+        transition: border 2s;
+    } 
+    ????*/
+
+    
