@@ -61,7 +61,7 @@ a {
     float: right;
 }
 
-.row {
+.row-margin-30 {
     margin:0 -30px;
 }
 
@@ -326,3 +326,28 @@ header a, header img {
     .features .col-33 {
         height: 500px;    
     }
+
+    /* CLIENTS */
+
+    .clients-text .designit-logo{
+        width:30%;
+    }
+
+    .clients-text{
+        padding: 30px;
+    }
+
+    .clients-text h2 {
+        font-size: 3em;
+    }
+
+    .clients-text address {
+
+    }
+
+    
+    /* .square-15 {
+        width:15vw;
+        height:15vw
+    } */
+   
