@@ -140,17 +140,15 @@ section h2 {
 /* buttons */
 
 .btn {
-    font-weight: normal;
+    display: inline;
     text-decoration: none;
 }
 
 .btn-small {
-    font-size: 14px;
     padding: 5px 20px;
 }
 
 .btn-big {
-   font-size: 14px;
    padding: 8px 28px;
 }
 
@@ -165,9 +163,15 @@ section h2 {
 }
 
 .btn-white {
+    font-weight: 600;
     border: 1px solid black;
     background-color: white;
     color: black;
+}
+
+.btn-100 {
+    width: 100%;
+    text-align: center;
 }
 
 /* icons */
@@ -299,8 +303,6 @@ header a, header img {
 
     .box .btn {
         display: inline-block;
-        width: 100%;
-        text-align: center;
         margin: 40px 0 30px;
     }
 
@@ -354,9 +356,6 @@ header a, header img {
     }
 
     /* clients logo */
-
-    
-
 
     .clients-logo {
         width: 50%;
@@ -428,5 +427,23 @@ header a, header img {
 
     .free-trial {
         background-color: #B4D0E7;
+    }
+    
+    .free-trial .col {
         height: 360px;
+    }
+
+    .free-trial h2, .free-trial .btn {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .free-trial h2 {
+        color: #61082B;
+    }
+
+    .free-trial .btn {
+        border-color: white;
     }
