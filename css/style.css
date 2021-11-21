@@ -28,14 +28,15 @@ section a {
 section h2 {
     font-size: 3em;
 }
+
+
 /* Utilities */
 
-.clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
+.p-relative {
+    position: relative;
 }
 
+/* containers */
 .container-big{
     width: 80%;
     margin: auto;
@@ -46,20 +47,12 @@ section h2 {
     margin: auto;
 }
 
+/* layout */
 
-
-/* text */
-
-.text-align-right {
-    text-align: right;
-}
-
-.text-align-center {
-    text-align: center;
-}
-
-.underline {
-    text-decoration: underline;
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
 }
 
 /* columns */
@@ -121,6 +114,23 @@ section h2 {
 .col-100 {
     width:100%
 }
+
+
+/* text */
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* margin/paddings */
 
 .margin-150 {
     margin-top:150px;
@@ -234,9 +244,6 @@ header a, header img {
     font-size: 42px;
 }
 
-.jumbotron-image {
-    position: relative;
-}
     /* forse meglio come utilities? */
 
 .jumbotron-image figure {
@@ -367,11 +374,6 @@ header a, header img {
 
     /* clients logo backgrounds*/
 
-
-    .clients-logo-container {
-        position: relative;
-    }
-
     .clients-logo-container:hover::after {
         display: inline-block;
         content: '';
@@ -422,4 +424,9 @@ header a, header img {
     } 
     ????*/
 
-    
+    /* free trial */
+
+    .free-trial {
+        background-color: #B4D0E7;
+        height: 360px;
+    }
