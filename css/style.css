@@ -39,6 +39,10 @@ a {
     margin: auto;
 }
 
+
+
+/* text */
+
 .text-align-right {
     text-align: right;
 }
@@ -47,12 +51,15 @@ a {
     text-align: center;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+/* columns */
 
 .float-right {
     float: right;
 }
-
-/* columns */
 
 .row {
     margin:0 -30px;
@@ -301,4 +308,21 @@ header a, header img {
         font-size: 22px;
         font-weight: 800;
         margin:20px 0;
+    }
+
+    /* FEATURES*/
+
+    .features h2 {
+        font-size: 42px;
+        padding-bottom: 40px;
+    }
+    
+    .features h3 {
+        font-size: 24px;
+        font-weight: 800;
+        padding-bottom: 30px;
+    }
+
+    .features .col-33 {
+        height: 500px;    
     }
