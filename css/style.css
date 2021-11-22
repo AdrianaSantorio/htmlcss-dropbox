@@ -146,6 +146,10 @@ li a {
     text-decoration: underline;
 }
 
+.vert-ali-middle {
+    vertical-align: middle;
+}
+
 /* margin/paddings */
 
 .margin-150 {
@@ -483,4 +487,29 @@ header a, header img {
     footer {
         background-color: black;
         color: white;
+        padding: 100px 0 30px;
+    }
+
+    footer h3 {
+        padding-bottom: 30px;
+        font-size: 24px;
+    }
+
+    footer li {
+        padding: 10px 0;
+    }
+
+    footer .choose-language {
+        color: gray;
+    }
+
+    .choose-language * {
+        vertical-align: middle;
+    }
+
+    /* TO DO, da rivedere, certamente soluione più elegante */
+
+    .fa-sort-up {
+        display: inline-block;
+        height: 5px;
     }
