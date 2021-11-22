@@ -31,8 +31,7 @@ li a {
 /* icons */
 
 .fa-li {
-    vertical-align: middle;
-    display: inline-block;
+    margin: 0 0 0 -1em;
 }
 
 /* UTILITIES */
