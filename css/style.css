@@ -275,10 +275,18 @@ header a, header img {
 
     /* PLANS */
 
+    
+
     .plans h2 {
         padding: 150px 0 50px;
     }
     
+    /* radio */
+
+    .payment-plans {
+        padding-bottom: 30px;
+    }
+
     .plans .box {
         border: 1px solid #E2E2E4;
         padding: 10px 30px;
