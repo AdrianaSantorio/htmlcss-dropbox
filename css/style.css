@@ -9,16 +9,12 @@ img {
     max-width: 100%;
 }
 
-/* Generals */
+/* GENERALS */
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 600;
-}
-
-ul a {
-    text-decoration: none;
 }
 
 section a {
@@ -29,8 +25,18 @@ section h2 {
     font-size: 3em;
 }
 
+/* lists */
 
-/* Utilities */
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+/* UTILITIES */
 
 .p-relative {
     position: relative;
@@ -80,48 +86,48 @@ section h2 {
     float: left;
 }
 
-.col-20 {
+.w-20 {
     width:20%;
 }
 
-.col-25 {
+.w-25 {
     width: 25%;
 }
 
-.col-30 {
+.w-30 {
     width: 30%;
 }
 
-.col-33 {
+.w-33 {
     width: calc(100% / 3);
     padding: 0 30px;
 }
 
-.col-40 {
+.w-40 {
     width: 40%;
 }
 
-.col-45 {
+.w-45 {
     width: 45%;
 }
 
-.col-50 {
+.w-50 {
     width: 50%;
 }
 
-.col-55 {
+.w-55 {
     width: 55%;
 }
 
-.col-60 {
+.w-60 {
     width: 60%;
 }
 
-.col-70 {
+.w-70 {
     width: 70%;
 }
 
-.col-100 {
+.w-100 {
     width:100%
 }
 
@@ -152,6 +158,11 @@ section h2 {
 .btn {
     display: inline;
     text-decoration: none;
+    transition: filter 0.5s;
+}
+
+.btn:hover {
+    filter: brightness(1.5);
 }
 
 .btn-small {
@@ -165,13 +176,6 @@ section h2 {
 .btn-blue {
     background-color: #0061FF;
     color: white;
-    transition: background-color 0.5s;
-}
-
-
-/* si può usare brightness e applicarlo a tutti i bottoni */
-.btn-blue:hover {
-    background-color: #3381ff;
 }
 
 .btn-white {
@@ -189,9 +193,6 @@ section h2 {
 
 .fa-li {
     vertical-align: middle;
-}
-
-li {
     position: relative;
     display: inline-block;
 }
@@ -208,7 +209,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width:100%;
     z-index: 1;
     /* boxshadow */
 }
