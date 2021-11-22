@@ -65,10 +65,16 @@ section h2 {
     float: right;
 }
 
+/* questa cosa si piò fare meglio coi selettori */
+
+/* gutter+selettori */
+
 .row-margin-30 {
     margin:0 -30px;
     padding-bottom: 50px;
 }
+
+/* invece che col, w-# */
 
 .col {
     float: left;
@@ -162,6 +168,8 @@ section h2 {
     transition: background-color 0.5s;
 }
 
+
+/* si può usare brightness e applicarlo a tutti i bottoni */
 .btn-blue:hover {
     background-color: #3381ff;
 }
@@ -202,7 +210,10 @@ header {
     left: 0;
     width:100%;
     z-index: 1;
+    /* boxshadow */
 }
+
+/* padding top al body invece che alla prima sezione */
 
 nav , nav * {
     display: inline;
@@ -238,6 +249,7 @@ header a, header img {
     padding-right: 9px;
     height: 405px;
 }
+/* forse non ho bisogno dell' height se ho il padding */
 
 .jumbotron-text p {
     padding-bottom: 30px;
