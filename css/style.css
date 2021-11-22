@@ -17,6 +17,11 @@ body {
     font-weight: 600;
 }
 
+hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
 
 /* lists */
 
@@ -261,8 +266,6 @@ header a, header img {
     font-size: 42px;
 }
 
-    /* forse meglio come utilities? */
-
 .jumbotron-image figure {
     position: absolute;
     top: 0;
@@ -273,8 +276,6 @@ header a, header img {
 
     /* PLANS */
 
-    
-    
     /* payment plans */
 
     .payment-plans {
