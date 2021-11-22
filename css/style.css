@@ -342,6 +342,10 @@ header a, header img {
         margin:20px 0;
     }
 
+    .partners p {
+        margin-bottom: 30px;
+    }
+
     /* FEATURES*/
 
     .features h2 {
@@ -359,9 +363,13 @@ header a, header img {
     }
 
     /* CLIENTS */
-
+    .clients .container-medium a {
+        padding: 50px 0;
+    }
    
    /* clients text */
+
+
     .clients-text .designit-logo{
         width:30%;
     }
