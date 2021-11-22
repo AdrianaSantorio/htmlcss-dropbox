@@ -371,10 +371,8 @@ header a, header img {
         font-size: 28px;
         padding: 30px 0 16px;
     }
-    .plans ul {
-        list-style-type: none;
-    }
-    .plans-specifics li,.plans-features li {
+    
+    .plans li {
         padding: 15px 0; 
     }
 
@@ -394,6 +392,8 @@ header a, header img {
     hr {
         margin: 30px 0 40px;
     }
+
+    enterprise
 
 
     /* PARTNERS */
@@ -455,7 +455,7 @@ header a, header img {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        filter: invert();
+        filter: invert(1);
     }
 
     .square-15 {
@@ -465,7 +465,8 @@ header a, header img {
 
     /* clients logo backgrounds*/
 
-    .clients-logo-container:hover::after {
+
+    .clients-logo-container::after {
         display: inline-block;
         content: '';
         position: absolute;
@@ -473,9 +474,27 @@ header a, header img {
         left: 0;
         bottom: 0;
         right: 0;
+        border: 10px solid rgba(255, 255,255, 0);
+        transition: border 1s linear;
+    }
+
+    .clients-logo-container:hover::after {
         border: 10px solid rgba(255, 255, 255, 0.4);
     }
+
+    /* .clients-logo-container {
+        transition: border 1s linear;
+    }
+
+    .designit {
+        border: 0px solid #A2D39B;
+    }
     
+    .designit:hover {
+        border: 10px solid black;
+    }
+     */
+
     /*  backgrounds */
 
     .clients-logo-container.designit {
@@ -510,10 +529,9 @@ header a, header img {
         background-color: #FFD830;
     }
 
-    /* .clients-logo-container:hover {
+    .clients-logo-container::after {
         transition: border 2s;
-    } 
-    ????*/
+    }
 
     /* free trial */
 
