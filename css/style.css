@@ -42,12 +42,14 @@ li a {
 
 /* icons */
 
-.fa-li {
-    margin: 0 0 0 -1em;
-}
+
 
 .icon-list.fa-ul {
-    margin-left: 1,5em;
+    margin-left: 1.5em;
+}
+
+.icon-list .fa-li {
+    margin: 0;
 }
 
 /* sections */
