@@ -282,9 +282,25 @@ header a, header img {
     margin: 15px 0 40px;
 }
 
-.jumbotron-text i {
+/* arrow animation */
+
+
+.jumbotron-arrow {
     font-size: 42px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,1.43,.92,.92);
 }
+
+@keyframes bounce {
+    50% {
+        transform: translateY(75%) scaleY(0.9);
+    }
+    100% {
+        transform: translateY(0%) scaleY(1);
+    }
+  }
 
 .jumbotron-image figure {
     position: absolute;
