@@ -18,9 +18,9 @@ body {
     /* line-height: 1.5rem; */
 }
 
-/* body:not(h1, h2, h3, h4) {
-    line-height: 22;
-} */
+p, blockquote {
+    line-height: 22px;
+}
 
 
 hr {
@@ -44,6 +44,10 @@ li a {
 
 .fa-li {
     margin: 0 0 0 -1em;
+}
+
+.icon-list.fa-ul {
+    margin-left: 1,5em;
 }
 
 /* sections */
@@ -419,9 +423,11 @@ label .mock-up:after {
 
 /* CLIENTS */
 
+.clients-spotlight {
+    margin-top: 50px;
+}
 
 /* clients text */
-
 
 .clients-text{
     padding: 30px;
