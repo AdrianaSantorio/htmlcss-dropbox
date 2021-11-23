@@ -561,8 +561,40 @@ label .mock-up:after {
 
 /* FAQ */
 
-.faq i {
+/* chevron */
+.faq .chevron:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f078";
     padding-right: 40px;
+}
+
+.faq .row:hover .chevron:before {
+    display: none;
+}
+
+.faq .chevron:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f077";
+    padding-right: 40px;
+    display: none;
+}
+
+.faq .row:hover .chevron:after {
+    display: inline-block;
+}
+
+/* faq answers */
+
+.faq .faq-a {
+    display: none;
+    transition: 1s;
+}
+
+.faq .row:hover .faq-a {
+    padding-top: 50px;
+    display: inline-block;
 }
 
 /* FOOTER */
