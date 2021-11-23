@@ -13,14 +13,18 @@ img {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    /* line-height: 1.5rem; */
 }
 
-hr{
+
+
+hr {
     height: 1px;
     background-color: #ccc;
     border: none;
+    margin: 30px 0;
 }
 
 /* lists */
@@ -37,6 +41,17 @@ li a {
 
 .fa-li {
     margin: 0 0 0 -1em;
+}
+
+/* sections */
+
+section a {
+    color: #2779FF;
+}
+
+section h2 {
+    font-size: 3em;
+    padding-bottom: 50px;
 }
 
 /* UTILITIES */
@@ -71,7 +86,6 @@ li a {
 .col {
     float: left;
 }
-
 
 /* width */
 
@@ -152,8 +166,16 @@ li a {
     margin-bottom: 150px;
 }
 
+.padding-b-70 {
+    padding-bottom: 70px;
+}
+
 .padding-b-50 {
     padding-bottom: 50px;
+}
+
+.padding-b-30 {
+    padding-bottom: 30px;
 }
 
 .g-30 {
@@ -200,17 +222,6 @@ li a {
     text-align: center;
 }
 
-/* sections */
-
-section a {
-    color: #2779FF;
-}
-
-section h2 {
-    font-size: 3em;
-    padding-bottom: 50px;
-}
-
 /* BODY */
 
 /* HEADER */
@@ -239,6 +250,8 @@ header a, header img {
     color: black;
 }
 
+/* MAIN */
+
 /* JUMBOTRON */
 
 .jumbotron {
@@ -253,17 +266,11 @@ header a, header img {
 }
 
 .jumbotron-text {
-    padding-right: 9px;
-    height: 405px;
-}
-/* forse non ho bisogno dell' height se ho il padding */
-
-.jumbotron-text p {
-    padding-bottom: 30px;
+    padding: 0 10px 150px 0;
 }
 
 .jumbotron-text a+div {
-    margin: 10px 0 30px;
+    margin: 15px 0 40px;
 }
 
 .jumbotron-text i {
@@ -275,303 +282,279 @@ header a, header img {
     top: 0;
     left: 0;
 }
-    /* to do? ridimensionare immagine */
+
+/* PLANS */
+
+/* payment plans */
+
+.payment-plans {
+    padding-bottom: 30px;
+}
+/* radio button */
+
+.radio-label {
+    display: inline-block;
+    position: relative;
+    padding: 0 35px;
+    cursor: pointer;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.mock-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}
+
+label:hover input ~ .mock-up {
+    background-color: #ccc;
+  }
+
+label input:checked ~ .mock-up {
+    background-color: #0061FF;
+}
+
+.mock-up:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+label input:checked ~ .mock-up:after {
+    display: inline-block;
+}
+
+label .mock-up:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: white;
+}
 
 
-    /* PLANS */
+/* box */
 
-    /* payment plans */
+.plans .box {
+    border: 1px solid #E2E2E4;
+    padding: 10px 30px 30px;
+    width: 100%;
+}
 
-    .payment-plans {
-        padding-bottom: 30px;
-    }
-    /* radio button */
+.plans .w-33 .box {
+    height: 1050px;
+}
 
-    .radio-label {
-        display: inline-block;
-        position: relative;
-        padding: 0 35px;
-        cursor: pointer;
-    }
-
-
-    input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-    }
-
-    .mock-up {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 22px;
-        width: 22px;
-        background-color: white;
-        border: 1px solid lightgray;
-        border-radius: 50%;
-    }
-
-    label:hover input ~ .mock-up {
-        background-color: #ccc;
-      }
-
-    label input:checked ~ .mock-up {
-        background-color: #0061FF;
-    }
-
-    .mock-up:after {
-        content: "";
-        position: absolute;
-        display: none;
-    }
-
-    label input:checked ~ .mock-up:after {
-        display: inline-block;
-    }
-    
-    label .mock-up:after {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-        height: 50%;
-        border-radius: 50%;
-        background: white;
-    }
+.plans .box-cap {
+    border-top:1px solid #E2E2E4;
+    border-left: 1px solid #E2E2E4 ;
+    border-right:1px solid #E2E2E4 ;
+    width: 100%;
+    padding: 15px 0; 
+}
 
 
-    /* box */
+.plans h3 {
+    font-size: 28px;
+    padding: 20px 0 20px;
+}
+
+.plans li {
+    padding: 15px 0; 
+}
+
+.plans-features i {
+    color: #0463FF;
+}
+
+.plans br+span {
+    color: #6E7D8A;
+}
+
+.box .btn {
+    display: inline-block;
+    margin: 40px 0 30px;
+}
 
 
-    .plans .box {
-        border: 1px solid #E2E2E4;
-        padding: 10px 30px;
-        width: 100%;
-    }
+/* PARTNERS */
 
-    .w-33 .box {
-        height: 1000px;
-    }
+.partners-text {
+    padding-left: 60px;
+    padding-top: 50px;
+}
 
-    .plans .box-cap {
-        border-top:1px solid #E2E2E4;
-        border-left: 1px solid #E2E2E4 ;
-        border-right:1px solid #E2E2E4 ;
-        width: 100%;
-        line-height: 45px;
-    }
+.partners-text h2 {
+    font-size: 2em;
+    font-weight: 800;
+}
 
-    .plans .row .box {
-        height: 1050px;
-    }
+/* FEATURES*/
 
-    .plans h3 {
-        font-size: 28px;
-        padding: 30px 0 16px;
-    }
-    
-    .plans li {
-        padding: 15px 0; 
-    }
+.features h3 {
+    font-size: 24px;
+    font-weight: 800;
+}
 
-    .plans-features i {
-        color: #0463FF;
-    }
+.features .col-33 {
+    height: 500px;    
+}
 
-    .plans br+span {
-        color: #6E7D8A;
-    }
-
-    .box .btn {
-        display: inline-block;
-        margin: 40px 0 30px;
-    }
-
-    hr {
-        margin: 30px 0 40px;
-    }
-
-    enterprise
+/* CLIENTS */
 
 
-    /* PARTNERS */
-
-    .partners-text {
-        padding-left: 60px;
-        padding-top: 50px;
-    }
-
-    .partners-text h2 {
-        font-size: 22px;
-        font-weight: 800;
-        margin:20px 0;
-    }
-
-    .partners p {
-        margin-bottom: 30px;
-    }
-
-    /* FEATURES*/
-
-    .features h2 {
-        padding-bottom: 40px;
-    }
-    
-    .features h3 {
-        font-size: 24px;
-        font-weight: 800;
-        padding-bottom: 30px;
-    }
-
-    .features .col-33 {
-        height: 500px;    
-    }
-
-    /* CLIENTS */
-
-   
-   /* clients text */
+/* clients text */
 
 
-    .clients-text{
-        padding: 30px;
-    }
+.clients-text{
+    padding: 30px;
+}
 
-    .clients-text address {
-        font-style: normal;
-        padding-top: 60px;
-    }
+.clients-text address {
+    font-style: normal;
+}
 
-    /* clients logo */
+/* clients logo */
 
-    .clients-logo {
-        width: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        filter: invert(1);
-    }
+.clients-logo {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+}
 
-    .square-15 {
-        height:15vw;
-    }
+.square-15 {
+    height:15vw;
+}
 
-    /* clients logo backgrounds*/
+/* clients logo backgrounds*/
 
 
-    .clients-logo-container::after {
-        display: inline-block;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        border: 10px solid rgba(255, 255,255, 0);
-        transition: border 1s linear;
-    }
+.clients-logo-container::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 10px solid rgba(255, 255,255, 0);
+    transition: border 0.5s linear;
+}
 
-    .clients-logo-container:hover::after {
-        border: 10px solid rgba(255, 255, 255, 0.4);
-    }
+.clients-logo-container:hover::after {
+    border: 10px solid rgba(255, 255, 255, 0.4);
+}
 
-    /*  backgrounds */
+/*  backgrounds */
 
-    .clients-logo-container.designit {
-        background-color: #A2D39B;
-    }
-    
-    .clients-logo-container.arizona-state-university {
-        background-color: #61082B;
-    }
-    
-    .clients-logo-container.university-of-florida {
-        background-color: #0093CE;
-    }
-    
-    .clients-logo-container.topps {
-        background-color: #FF1C1C;
-    }
-    
-    .clients-logo-container.world-bycicle-relief {
-        background-color: #D5001F;
-    }
-    
-    .clients-logo-container.hearst-corporation {
-        background-color: #B4D0E7 ;
-    }
-    
-    .clients-logo-container.lonely-planet {
-        background-color: #0D2481;
-    }
-    
-    .clients-logo-container.clear-channel-outdoor {
-        background-color: #FFD830;
-    }
+.clients-logo-container.designit {
+    background-color: #A2D39B;
+}
 
-    /* free trial */
+.clients-logo-container.arizona-state-university {
+    background-color: #61082B;
+}
 
-    .free-trial {
-        background-color: #B4D0E7;
-    }
-    
-    .free-trial .col {
-        height: 360px;
-    }
+.clients-logo-container.university-of-florida {
+    background-color: #0093CE;
+}
 
-    .free-trial h2, .free-trial .btn {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
+.clients-logo-container.topps {
+    background-color: #FF1C1C;
+}
 
-    .free-trial h2 {
-        color: #61082B;
-    }
+.clients-logo-container.world-bycicle-relief {
+    background-color: #D5001F;
+}
 
-    .free-trial .btn {
-        border-color: white;
-    }
+.clients-logo-container.hearst-corporation {
+    background-color: #B4D0E7 ;
+}
 
-    /* FAQ */
+.clients-logo-container.lonely-planet {
+    background-color: #0D2481;
+}
 
-    .faq i {
-        padding-right: 40px;
-    }
+.clients-logo-container.clear-channel-outdoor {
+    background-color: #FFD830;
+}
 
-    /* FOOTER */
+/* free trial */
 
-    footer {
-        background-color: black;
-        color: white;
-        padding: 100px 0 30px;
-    }
+.free-trial {
+    background-color: #B4D0E7;
+}
 
-    footer h3 {
-        padding-bottom: 30px;
-        font-size: 24px;
-    }
+.free-trial .col {
+    height: 360px;
+}
 
-    footer li {
-        padding: 10px 0;
-    }
+.free-trial h2, .free-trial .btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
 
-    footer .choose-language {
-        color: gray;
-    }
+.free-trial h2 {
+    color: #61082B;
+}
 
-    .choose-language * {
-        vertical-align: middle;
-    }
+.free-trial .btn {
+    border-color: white;
+}
 
-    /* TO DO, da rivedere, certamente soluione più elegante */
+/* FAQ */
 
-    .fa-sort-up {
-        display: inline-block;
-        height: 5px;
-    }
+.faq i {
+    padding-right: 40px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 100px 0 30px;
+    font-size: 14px;
+}
+
+footer h3 {
+    font-size: 22px;
+}
+
+footer li {
+    padding: 10px 0;
+}
+
+footer .choose-language {
+    color: gray;
+}
+
+.choose-language * {
+    vertical-align: middle;
+}
+
+/* TO DO, da rivedere, certamente soluzione più elegante */
+
+.fa-sort-up {
+    display: inline-block;
+    height: 5px;
+}
