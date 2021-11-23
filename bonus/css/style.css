@@ -245,7 +245,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 1px 2px lightgray;
 }
 
@@ -253,7 +253,7 @@ nav, nav * {
     display: inline;
 }
 
-li a:not(.btn) { 
+li a:not(.btn) {
     display: inline-block;
     height:78px;
 }
@@ -270,42 +270,46 @@ header a, header img {
 
 /* border bottom */
 
-li a:hover:not(.btn) {
+nav li a:hover:not(.btn) {
     border-bottom:2px solid black;
 }
 
 /* subnav */
 
 .subnav {
-    /* display: none; */
-    display: inline-block;
-    width: 210px;
-    height: 140px;
+    display: none;
+    width: 220px;
+    height: 110px;
     position: absolute;
-    top: 80px;
+    top: 81px;
     left: 0;
     background-color: white;
 }
 
 .subnav ul {
-    padding: 15px;
+    display: block;
     text-align: left;
-    
+    padding: 5px 0 10px;
 }
 
 .subnav li {
-    text-align: left;
-    padding: 0;
-    line-height: 16px;
+    display:block;
+    margin: 15px 0;
+    line-height: 28px;
+    font-size: 14px;
 }
 
-/* .subnav li:hover {
-    filter: brightness(0.8);
-} */
+.subnav a {
+    display: inline;
+}
 
-/* .subnav-generator:hover .subnav {
-    display: inline-block;
-} */
+.subnav li:hover {
+    background-color: lightgray;
+}
+
+.subnav-generator:hover .subnav {
+    display: block;
+}
 
 
 /* MAIN */
@@ -440,7 +444,7 @@ label .mock-up:after {
     border-left: 1px solid #E2E2E4 ;
     border-right:1px solid #E2E2E4 ;
     width: 100%;
-    padding: 15px 0; 
+    padding: 15px 0;
 }
 
 
@@ -450,7 +454,7 @@ label .mock-up:after {
 }
 
 .plans li {
-    padding: 15px 0; 
+    padding: 15px 0;
 }
 
 .plans-features i {
@@ -487,7 +491,7 @@ label .mock-up:after {
 }
 
 .features .col-33 {
-    height: 500px;    
+    height: 500px;
 }
 
 /* CLIENTS */
@@ -604,7 +608,7 @@ label .mock-up:after {
 /* chevron */
 .faq .chevron:before {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900; 
+    font-weight: 900;
     content: "\f078";
     padding-right: 40px;
 }
@@ -615,7 +619,7 @@ label .mock-up:after {
 
 .faq .chevron:after {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900; 
+    font-weight: 900;
     content: "\f077";
     padding-right: 40px;
     display: none;
