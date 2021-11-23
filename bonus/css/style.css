@@ -253,10 +253,19 @@ nav, nav * {
     display: inline;
 }
 
+li a:not(.btn) { 
+    display: inline-block;
+    height:78px;
+}
+
+li a:hover:not(.btn) {
+    border-bottom:2px solid black;
+}
+
 header a, header img {
-    vertical-align: middle;
     margin: 0 15px;
     color: black;
+    vertical-align: middle;
 }
 
 /* MAIN */
@@ -301,6 +310,8 @@ header a, header img {
         transform: translateY(0%) scaleY(1);
     }
   }
+
+/* jumbotron image */
 
 .jumbotron-image figure {
     position: absolute;
