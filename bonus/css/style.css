@@ -258,15 +258,57 @@ li a:not(.btn) {
     height:78px;
 }
 
+
+
+header li {
+    padding:0 15px;
+    display: inline-block;
+}
+
+header a, header img {
+    color: black;
+    vertical-align: middle;
+}
+
+/* border bottom */
+
 li a:hover:not(.btn) {
     border-bottom:2px solid black;
 }
 
-header a, header img {
-    margin: 0 15px;
-    color: black;
-    vertical-align: middle;
+/* subnav */
+
+.subnav {
+    /* display: none; */
+    display: inline-block;
+    width: 210px;
+    height: 140px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: white;
 }
+
+.subnav ul {
+    padding: 15px;
+    text-align: left;
+    
+}
+
+.subnav li {
+    text-align: left;
+    padding: 0;
+    line-height: 16px;
+}
+
+/* .subnav li:hover {
+    filter: brightness(0.8);
+} */
+
+/* .subnav-generator:hover .subnav {
+    display: inline-block;
+} */
+
 
 /* MAIN */
 
