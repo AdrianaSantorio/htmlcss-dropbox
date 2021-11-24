@@ -253,7 +253,7 @@ nav, nav * {
     display: inline;
 }
 
-li a:not(.btn) {
+li a {
     display: inline-block;
     height:78px;
 }
@@ -270,7 +270,7 @@ header a, header img {
 
 /* border bottom */
 
-nav li a:hover:not(.btn) {
+.nav-menu>a:hover {
     border-bottom:2px solid black;
 }
 
